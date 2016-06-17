@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Taxi</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="page">
+        <div id="header">
+            <div id="banner">
+                <div id="logo"></div>
+                <div id="title">
+                    Taxi Company
+                </div>
+            </div>
+        </div>
+        <div id="left">
+            <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ImageSet="Contacts" NodeIndent="10" ShowLines="True">
+                <HoverNodeStyle Font-Underline="False" />
+                <NodeStyle Font-Bold="True" Font-Italic="True" Font-Names="Verdana" Font-Size="10pt" ForeColor="#333300" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                <ParentNodeStyle Font-Bold="True" Font-Size="12pt" ForeColor="#003366" />
+                <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" />
+            </asp:TreeView>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        </div>
+        <div id="right">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

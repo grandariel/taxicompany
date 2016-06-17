@@ -1,0 +1,6 @@
+﻿<asp:TreeView runat="server" ImageSet="Contacts" NodeIndent="10" ShowLines="True">
+                <HoverNodeStyle Font-Underline="False" />
+                <NodeStyle Font-Bold="True" Font-Italic="True" Font-Names="Verdana" Font-Size="10pt" ForeColor="#A37A7A" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                <ParentNodeStyle Font-Bold="True" Font-Size="12pt" ForeColor="#BAB475" />
+                <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" />
+</asp:TreeView>
